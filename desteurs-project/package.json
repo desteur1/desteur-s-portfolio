@@ -1,0 +1,33 @@
+{
+  "name": "back-end",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "validate-html": "node validate-html.js",
+    "build-and-validate": "npm run build && npm run validate-html",
+    "start:frontend": "vue-cli-service serve"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.2",
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/vue-fontawesome": "^3.0.6",
+    "axios": "^1.6.8",
+    "core-js": "^3.37.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.3",
+    "vue-scrollto": "^2.20.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-service": "^5.0.8",
+    "html-validator": "^6.0.1",
+    "html-webpack-plugin": "^5.6.0",
+    "vue-template-compiler": "^2.7.16"
+  }
+}

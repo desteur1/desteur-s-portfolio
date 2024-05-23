@@ -1,0 +1,19 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "private": "true",
+  "description": "## Project setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:frontend": "npm --prefix desteurs-Project run serve",
+    "start:backend": "npm --prefix back start",
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\" "
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
