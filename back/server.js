@@ -2,19 +2,17 @@ require("dotenv").config();
 
 const express = require("express");
 const bodyParser = require("body-parser");
-//const router = express.Router();
+
 const nodemailer = require("nodemailer");
+//secure cross-origin request in this case backend and frontend
 const cors = require("cors");
 
 const port = process.env.port || 5000;
 const app = express();
 
 app.use(bodyParser.json());
-//app.use(
-// bodyParser.urlencoded({
-//  extended: true,
-// })
-//);
+
+//allow all origins
 app.use(cors());
 
 const transporter = nodemailer.createTransport({

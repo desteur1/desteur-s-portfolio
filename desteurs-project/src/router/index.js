@@ -50,7 +50,7 @@ const router = createRouter({
       name: "PageNotFound",
       component: PageNotFound,
     },
-  ],
+  ], //  i state my direction and behavior within my page here and call it in my router-link in app.vue. Note, this is for within the page. To scroll to the top of the page i gotta create a file call scroll.js in which i write my scrollToTop function
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition;
