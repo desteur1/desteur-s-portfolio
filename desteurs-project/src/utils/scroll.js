@@ -5,3 +5,4 @@ export function scrollToTop() {
     behavior: "smooth",
   });
 }
+//scroll to the top function

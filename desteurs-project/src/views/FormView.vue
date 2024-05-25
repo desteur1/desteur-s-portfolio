@@ -42,7 +42,7 @@
             >lien vers mon site commentaire dynamique</a
           >
           <a href="https://github.com/desteur1/commentaire_dynamique"
-            >mon comentaire dynamique sur github</a
+            >mon commentaire dynamique sur github</a
           >
         </div>
       </div>
@@ -61,6 +61,7 @@ export default {
   margin: 0;
   padding: 0;
 }
+
 .bloc-modal {
   position: fixed;
   top: 0;

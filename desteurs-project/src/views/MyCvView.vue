@@ -31,7 +31,7 @@
         </div>
         <div class="site-link">
           <a href="https://desteur1.github.io/correction-CV/"
-            >lien ver mon site CV en ligne</a
+            >lien vers mon site CV en ligne</a
           >
           <a href="https://github.com/desteur1/correction-CV"
             >mon CV dans mon repository github</a

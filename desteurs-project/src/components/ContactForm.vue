@@ -31,7 +31,7 @@
         </div>
         <div class="form-group">
           <label for="message" :class="{ active: FormData.message }"
-            ><font-awesome-icon :icon="['fas', 'comment']" /> message
+            ><font-awesome-icon :icon="['fas', 'comment']" /> Message
           </label>
           <textarea
             name="message"
@@ -43,7 +43,7 @@
         </div>
         <div class="butt">
           <button type="submit" class="btn-1">
-            submit <font-awesome-icon :icon="[, 'paper-plane']" />
+            Envoyer <font-awesome-icon :icon="[, 'paper-plane']" />
           </button>
         </div>
       </form>

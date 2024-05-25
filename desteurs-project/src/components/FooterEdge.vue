@@ -20,9 +20,7 @@
       /></a>
     </nav>
     <p>
-      <small
-        >le <time datetime="2024-05-21"></time> mis a jour le 21-05-2024</small
-      >
+      <small>mis à jour le<time datetime="2024-05-21"></time> 21-05-2024</small>
     </p>
   </div>
 </template>
@@ -53,11 +51,14 @@ export default {
 nav a {
   padding: 0 30px;
 }
+p {
+  font-size: 20px;
+}
 
 @media (max-width: 810px) {
   .itm-10 {
-    width: 12px;
-    height: 12px;
+    width: 18px;
+    height: 18px;
   }
   .b-nav {
     width: 95%;
@@ -66,8 +67,5 @@ nav a {
   nav a {
     padding: 0 5px;
   }
-}
-p {
-  font-size: 15px;
 }
 </style>

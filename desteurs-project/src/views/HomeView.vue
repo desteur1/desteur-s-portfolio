@@ -2,11 +2,11 @@
   <body>
     <main>
       <article class="slider">
-        <img src="@/assets/image/pic.jpg" class="slider-background" />
+        <img src="@/assets/my-profile.jpg" class="slider-background" />
 
         <div class="slider-content">
           <h1>desteur piepenche fall</h1>
-          <p>developpeur web</p>
+          <p>developpeur web et web mobile</p>
         </div>
       </article>
       <section class="about-me d-10" id="section2">
@@ -26,7 +26,7 @@
       </section>
       <section id="section1" class="exper">
         <div class="w20 mz-11">
-          <h2>mes créations</h2>
+          <h2>mes creations</h2>
         </div>
         <div class="w10 mt-10">
           <figure>
@@ -113,7 +113,7 @@ export default {
       }
     },
   },
-  /*to reveal my components hidden by my releve data, i create a methode toggleModal which this.revele(the initial state of revele which is false =!this.revele meaning the reverse of the initial state which is now true,hence the components shows itself.all is rest to do is bind it to my components and declare it where i want to use it in this case i used i v-on:@click="toggleModal"on images in this template*/
+  /*to reveal my components hidden by my releve data, i create a methode toggleModal which this.revele(the initial state of revele which is false =!this.revele meaning the reverse of the initial state which is now true,hence the components shows itself.all is rest to do is bind it to my components and declare it where i want to use it in this case i used v-on:@click="toggleModal"on images in this template*/
 };
 </script>
 
@@ -129,18 +129,22 @@ body {
 
 /*****************MAIN*************/
 .slider {
-  padding-top: 100px;
+  padding-top: 150px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   background: #000;
 }
 .slider-background {
   width: 300px;
-  height: 500px;
+  height: 300px;
   object-fit: cover;
-  padding: 20px 0 30px 20px;
+  padding: 20px 50px 30px 50px;
+  filter: brightness(50%);
+
+  border-radius: 50%;
 }
+
 .slider-content {
   width: 60%;
   display: flex;
@@ -236,12 +240,12 @@ figure {
 
 @media (max-width: 810px) {
   .slider {
-    padding-top: 20px;
+    padding: 20px 0 20px 0;
   }
   .slider-background {
-    width: 50px;
+    width: 100px;
     height: 100px;
-    padding: 0 0 20px 20px;
+    padding: 20px;
   }
   h1 {
     font-size: 1rem;
@@ -251,17 +255,22 @@ figure {
   }
   .about-me {
     padding: 20px 15px 20px 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   h2 {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    padding-bottom: 10px;
   }
 
   .w10 {
-    font-size: 0.5rem;
-    line-height: 20px;
+    font-size: 0.7rem;
+    line-height: 25px;
   }
   .w10 strong {
     font-size: 0.8rem;
+    filter: brightness(60%);
   }
   .mt-10 {
     gap: 10px;
@@ -271,6 +280,7 @@ figure {
     padding: 20px 10px 20px 10px;
     align-items: center;
   }
+
   .fig-9 {
     padding: 10px 0 5px 0;
   }
