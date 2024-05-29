@@ -5,6 +5,7 @@
   "description": "## Project setup",
   "main": "index.js",
   "scripts": {
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:frontend": "npm --prefix desteurs-Project run serve",
     "start:backend": "npm --prefix back start",
@@ -17,6 +18,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "stylelint": "^16.6.0"
   }
 }
