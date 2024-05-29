@@ -1,7 +1,5 @@
 const { defineConfig } = require("@vue/cli-service");
 module.exports = defineConfig({
-  publicPath: "desteur1/desteur-s-portfolio/",
-
   transpileDependencies: true,
   chainWebpack: (config) => {
     config.plugin("html").tap((args) => {
